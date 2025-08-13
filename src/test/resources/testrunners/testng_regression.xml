@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Regression Test Suite" verbose="4">
+
+<listeners>
+ <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+</listeners>
+<test name="Go Rest Api Test -GetUser"> 
+<classes>
+<class name="com.qa.api.gorest.tests.GetUesrTest"></class>
+</classes>
+</test>
+
+<test name="Go Rest Api Test - CreateUser">
+
+<classes>
+<class name="com.qa.api.gorest.tests.CreateUserTest"></class>
+
+</classes>
+</test>
+
+
+<test name="Go Rest Api Test - DeleteUser">
+<classes>
+<class name="com.qa.api.gorest.tests.DeleteUserTest"></class>
+
+</classes>
+
+</test>
+
+
+<test name="Go Rest Api Test - UpdateUser">
+<classes>
+<class name="com.qa.api.gorest.tests.UpdateUserTest"></class>
+
+</classes>
+</test>
+
+<test name="Product API - GetProducts">
+<classes>
+<class name="com.qa.api.product.test.ProductApiTest"></class>
+</classes>
+
+</test>
+</suite>
