@@ -54,7 +54,7 @@ public Object[][] getExcelUserData() throws Exception {
 	Assert.assertEquals(response.jsonPath().getString("gender"), gender);
 	Assert.assertEquals(response.jsonPath().getString("status"), status);
 	Assert.assertNotNull(response.jsonPath().getString("id"));
-		ChainTestListener.log("user id" + response.jsonPath().getString("id"));
+		ChainTestListener.log("user id is" + response.jsonPath().getString("id"));
 	}
 	
 	@Test
